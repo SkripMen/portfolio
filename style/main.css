@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: #282828;
+}
+
+.load {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* min-height: 100vh; */
+}
+
+.preloader {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: preloader 2s infinite;
+    -webkit-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+.preloader:before {
+    content: '';
+    position: absolute;
+    margin-left: 50%;
+    background: #0c0c0c;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.centerBox {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 35px solid #1a1a1a;
+    /* border: 1px solid #fff; */
+    animation: centerBox 5s infinite;
+    -webkit-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+@keyframes preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes centerBox {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@font-face {
+    font-family: harpseal;
+    src: url(../font/harpseal.otf);
+}
+
+.text {
+    font-family: harpseal;
+    color: #fff;
+    user-select: none;
+}
+
+h1 {
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1120px) {
+    h1 {
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 888px) {
+    h1 {
+        margin-top: 30%;
+    }
+}
+
+@media screen and (max-width: 745px) {
+    h1 {
+        margin-top: 40%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    h1 {
+        margin-top: 50%;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    h1 {
+        margin-top: 60%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 386px) {
+    h1 {
+        margin-top: 70%;
+    }
+}
